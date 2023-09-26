@@ -1,0 +1,43 @@
+/* style.css */
+/* Gaya untuk tampilan judul */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; /* Warna teks */
+}
+
+/* Gaya untuk tabel */
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px; /* Jarak antara judul dan tabel */
+}
+
+/* Gaya untuk header kolom */
+th {
+    background-color: #333; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 10px;
+    text-align: center; /* Mengatur teks ke tengah secara horizontal */
+    vertical-align: middle; /* Mengatur teks ke tengah secara vertikal */
+}
+
+/* Gaya untuk sel dalam tabel */
+td {
+    border: 1px solid #ddd;
+    text-align: center; /* Mengatur teks ke tengah secara horizontal */
+    vertical-align: middle; /* Mengatur teks ke tengah secara vertikal */
+    padding: 8px;
+}
+
+
+/* Gaya untuk baris ganjil dalam tabel */
+tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Warna latar belakang baris ganjil */
+}
+
+/* Gaya untuk baris saat dihover */
+tr:hover {
+    background-color: #ddd; /* Warna latar belakang saat dihover */
+}
