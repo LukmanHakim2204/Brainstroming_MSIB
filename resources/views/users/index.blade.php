@@ -23,7 +23,7 @@
             </tr>
             @foreach ($users as $user)
             <tr>
-                <td>{{ $user->id }}</td>
+                <td>{{ $user->id_user }}</td>
                 <td>{{ $user->username }}</td>
                 <td>{{ $user->address }}</td>
                 <td>{{ $user->phone }}</td>
