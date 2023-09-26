@@ -38,15 +38,14 @@
                 <th>Address</th>
                 <th>Phone</th>
                 <th>Create At</th>
-    
             </tr>
-            @foreach ($users as $users)
+            @foreach ($users as $user)
             <tr>
-                <td>{{ $users->id_user }}</td>
-                <td>{{ $users->username }}</td>
-                <td>{{ $users->address }}</td>
-                <td>{{ $users->phone }}</td>
-                <td>{{ $users->created_at }}</td>
+                <td>{{ $user->id }}</td>
+                <td>{{ $user->username }}</td>
+                <td>{{ $user->address }}</td>
+                <td>{{ $user->phone }}</td>
+                <td>{{ $user->created_at }}</td>
             </tr>
             @endforeach
         </table>
