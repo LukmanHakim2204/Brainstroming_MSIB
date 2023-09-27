@@ -12,6 +12,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 20px; /* Jarak antara judul dan tabel */
+
 }
 
 /* Gaya untuk header kolom */
@@ -41,3 +42,4 @@ tr:nth-child(odd) {
 tr:hover {
     background-color: #ddd; /* Warna latar belakang saat dihover */
 }
+
