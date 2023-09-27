@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('Users');
+    return redirect('products');
 });
+
+Route::resource('Products', ProductsController::class);
 
 //Route User
 Route::resource('Users', UsersController::class);
