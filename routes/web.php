@@ -16,11 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('products');
+    return redirect('Products');
 });
 
 Route::resource('Products', ProductsController::class);
 
 //Route User
 Route::resource('Users', UsersController::class);
-Route::resource('Seller', SellerController::class);
