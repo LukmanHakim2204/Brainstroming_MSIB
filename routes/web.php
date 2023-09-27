@@ -19,6 +19,7 @@ Route::get('/', function () {
     return redirect('Products');
 });
 
+Route::resource('Sellers', SellerController::class);
 Route::resource('Products', ProductsController::class);
 
 //Route User
