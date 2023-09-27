@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\SellerController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::resource('Products', ProductsController::class);
 
 //Route User
 Route::resource('Users', UsersController::class);
+Route::resource('Seller', SellerController::class);
