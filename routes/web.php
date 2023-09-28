@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\SellerController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +16,17 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\SellerController;
+use App\Http\Controllers\TransactionController;
+use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return redirect('Products');
+});
 
-
-Route::resource('/', UsersController::class);
+Route::resource('Sellers', SellerController::class);
 Route::resource('Products', ProductsController::class);
 Route::resource('Transaction', TransactionController::class);
-
-//Route User
+Route::resource('Users', UsersController::class);
