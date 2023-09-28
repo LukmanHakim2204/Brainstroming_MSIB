@@ -17,8 +17,10 @@ return new class extends Migration
             $table->date('date_transaction');
             $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('id_user');
+            $table->unsignedBigInteger('seller_id');
             $table->foreign('id_user')->references('id_user')->on('users');
             $table->foreign('product_id')->references('id_product')->on('products');
+            $table->foreign('seller_id')->references('id_seller')->on('seller');
             $table->integer('quantity');
             $table->integer('subtotal_price');
             $table->timestamps();

@@ -16,7 +16,7 @@ class SellerSeeder extends Seeder
     {
         //        
         $seller = new Seller();
-        $seller->username = 'Rizky Alamsyah';
+        $seller->name = 'Rizky Alamsyah';
         $seller->email = 'ky@gmail.com';
         $seller->save();
     }

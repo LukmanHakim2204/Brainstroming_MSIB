@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">User</a>
+            <a class="nav-link active" aria-current="page" href="{{ route('Users.index') }}">User</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('Products.index') }}">Product</a>
@@ -15,7 +15,9 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('Transaction.index') }}">Transaksi</a>
           </li>
-        
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('Sellers.index') }}">Seller</a>
+          </li>
         </ul>
       </div>
     </div>
