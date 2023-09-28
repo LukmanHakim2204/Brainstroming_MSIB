@@ -11,7 +11,7 @@ class Seller extends Model
     public $table = 'seller';
 
     public $fillable = [
-        'username',
+        'name',
         'email',
     ];
 }
