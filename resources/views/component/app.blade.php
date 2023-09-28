@@ -11,11 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>Sistem Informasi Penjualan</title>
-    <style>
-        ul,li,a{
-            color: white;
-        }
-    </style>
+    
 </head>
 
 @include('component.header')
