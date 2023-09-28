@@ -1,5 +1,5 @@
-@extends('component.app')
-@section('content')
+@include('component.app')
+{{-- @include('component.header') --}}
     <body>
         <div class="container">
             <h1>Data Products </h1>
@@ -36,4 +36,4 @@
             </div>
         </div>
     </body>
-@endsection
+
