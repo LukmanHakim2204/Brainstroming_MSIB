@@ -3,29 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Products;
+use App\Models\Transactions; // Impor model Transaction
 
-
-class ProductsController extends Controller
+class TransactionController extends Controller
 {
-    protected $products;
-
-    public function __construct(Products $products)
-    {
-        $this->products = $products;
-    }
-
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
-        
-        $products = Products::paginate(5);
-        return view('products.index', compact('products'));
+        $transactions = Transactions::all();
+        return view('Transaction.transaksi',['transactions' => $transactions]);
     }
-
 
     /**
      * Show the form for creating a new resource.

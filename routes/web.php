@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect('products');
-});
 
+
+Route::resource('/', UsersController::class);
 Route::resource('Products', ProductsController::class);
+Route::resource('Transaction', TransactionController::class);
 
 //Route User
-Route::resource('Users', UsersController::class);
