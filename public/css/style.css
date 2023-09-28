@@ -43,3 +43,27 @@ tr:hover {
     background-color: #ddd; /* Warna latar belakang saat dihover */
 }
 
+
+.navbar-brand {
+    font-size: 24px; /* Ukuran font untuk brand */
+    color: white; /* Warna teks */
+  
+}
+
+.navbar-nav .nav-item .nav-link:active {
+    font-size: 20px; /* Ukuran font untuk menu */
+    color: black; /* Warna teks */
+    background-color: white; /* Warna latar belakang */
+    border-radius: 20px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: black; /* Warna teks saat hover */
+    background-color: white; /* Warna latar belakang saat hover */
+    border-radius: 20px;
+    font-size: 20px; /* Ukuran font untuk menu saat hover */
+}
+
+
+
+

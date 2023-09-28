@@ -1,5 +1,5 @@
 @include('component.app')
-{{-- @include('component.header') --}}
+
     <body>
         <div class="container">
             <h1>Data Products </h1>
